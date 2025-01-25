@@ -24,7 +24,6 @@
 
 # Assumptions
 
-    - The system does not persist data beyond the session, meaning if the page is reloaded or the server is restarted, the data will be reset.
     - The expiry dates are stored in the format YYYY-MM-DD and compared directly as strings.
     - Basic validation is assumed for adding items (e.g., correct data format is entered).
 

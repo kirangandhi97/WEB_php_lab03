@@ -13,20 +13,16 @@ include 'includes/functions.php';
 </head>
 
 <body>
-    <div class="container">
-        <div class="page-header">
-            <h2>Grocery Inventory</h2>
-            <?php include 'includes/menu.php'; ?>
-        </div>
-        <?php
-        /** Check if "Add Item" button is clicked */
-        if (isset($_POST['addItem'])) {
-            /** Add new item */
-            addItem($groceryItems, $groceryDetails, $_POST['name'], $_POST['type'], $_POST['price'], $_POST['expiry_date']);
-        }
-        displayInventory($groceryItems, $groceryDetails);
-        ?>
-    </div>
+<b><h1>Grocery Management System</h1></b> <br><br>
+    <nav>
+        <ul>
+            <li><a href="forms/add_product.php">Add New Product</a></li>
+            <li><a href="forms/update_quantity.php">Update Product Quantity</a></li>
+            <li><a href="forms/place_order.php">Place Customer Order</a></li>
+            <li><a href="forms/view_sales.php">View Sales Report</a></li>
+            <li><a href="forms/search_product.php">Search Products</a></li>
+        </ul>
+    </nav>
 </body>
 
-</html>
+
